@@ -29,3 +29,5 @@ age2 = 13
 print('이름: %s 나이: %d'%(name1,age1))
 print("이름: %s 나이: %d"%(name2,age2))
 
+movie_rank = ['닥터 스트레인지','스플릿','럭키']
+print(movie_rank)
