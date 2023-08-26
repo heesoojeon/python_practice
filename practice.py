@@ -31,3 +31,4 @@ print("이름: %s 나이: %d"%(name2,age2))
 
 #movie_rank = ['닥터 스트레인지','스플릿','럭키']
 #print(movie_rank)여기서부터 터미널에서 실행이 안됩니다.
+

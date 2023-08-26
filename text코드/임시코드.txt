@@ -1,0 +1,191 @@
+self.coords = [(100, 100), (100, 110), (100, 120), (100, 130), 
+                       (100, 140), (100, 150), (100, 160), (100, 170),
+                       (100, 180), (100, 190), (100, 200), (100, 210),
+                       (100, 220), (100, 230), (100, 240), (100, 250)]   
+
+self.colors = [(189, 189, 189), (189, 189, 189), (189, 189, 189), (189, 189, 189) , 
+                       (189, 189, 189) , (189, 189, 189) , (189, 189, 189) , (189, 189, 189),
+                       (189, 189, 189), (189, 189, 189), (189, 189, 189), (189, 189, 189),
+                       (189, 189, 189), (189, 189, 189), (189, 189, 189), (189, 189, 189)] 
+
+self.coords = [(100, 100)]
+        self.colors = []
+
+                # 30도를 라디안으로 변환
+        angle = math.radians(30)
+
+# x 좌표 증가량
+        delta_x = 20
+
+# y 좌표 증가량 (tan(30) = 1/√3)
+        delta_y = delta_x / math.sqrt(3)
+
+        for i in range(1, 20):
+    # 이전 점의 x, y 좌표
+            prev_x, prev_y = self.coords[i - 1]
+    
+    # 현재 점의 x, y 좌표 계산
+            curr_x = prev_x + delta_x
+            curr_y = prev_y + delta_y
+    
+    # 현재 점의 좌표를 리스트에 추가
+        self.coords.append((curr_x, curr_y))
+    
+    # 현재 점의 색상을 리스트에 추가
+        self.colors.append((189, 189, 189))
+
+
+import math
+
+self.coords = [(100, 100)]
+self.colors = []
+
+# 30도를 라디안으로 변환
+angle = math.radians(30)
+
+# x 좌표 증가량
+delta_x = 20
+
+# y 좌표 증가량 (tan(30) = 1/√3)
+delta_y = delta_x / math.sqrt(3)
+
+for i in range(1, 20):
+    # 이전 점의 x, y 좌표
+    prev_x, prev_y = self.coords[i - 1]
+    
+    # 현재 점의 x, y 좌표 계산
+    curr_x = prev_x + delta_x
+    curr_y = prev_y + delta_y
+    
+    # 현재 점의 좌표를 리스트에 추가
+    self.coords.append((curr_x, curr_y))
+    
+    # 현재 점의 색상을 리스트에 추가
+    self.colors.append((189, 189, 189))
+
+
+import math
+
+self.coords = [(100, 100)]
+self.colors = [(189, 189, 189)]
+
+# 30도를 라디안으로 변환
+angle = math.radians(30)
+
+# x 좌표 증가량
+delta_x = 20
+
+# y 좌표 증가량 (tan(30) = 1/√3)
+delta_y = delta_x / math.sqrt(3)
+
+for i in range(1, 20):
+    # 이전 점의 x, y 좌표
+    prev_x, prev_y = self.coords[i - 1]
+    
+    # 현재 점의 x, y 좌표 계산
+    curr_x = prev_x + delta_x
+    curr_y = prev_y + delta_y
+    
+    # 현재 점의 좌표를 리스트에 추가
+    self.coords.append((curr_x, curr_y))
+    
+    # 현재 점의 색상을 리스트에 추가
+    self.colors.append((189, 189, 189))
+
+for i in range(11):
+    coord = (100, 100 + i*10)
+    self.coords.append(coord)
+    self.colors.append((189, 189, 189))
+
+for i in range(8):
+    coord = (100, 200 + i*10)
+    self.coords.append(coord)
+    self.colors.append((189, 189, 189))
+
+self.pos = 0  # 배열 시작 위치
+
+
+예외가 발생했습니다. IndexError
+list index out of range
+  File "C:\Users\user\Desktop\Pixel_art_and_game_project\motion3_pixel.py", line 36, in __init__
+    prev_x, prev_y = self.coords[i - 1]
+                     ~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\Desktop\Pixel_art_and_game_project\motion3_pixel.py", line 102, in <module>
+    ex = MyCanvas()
+         ^^^^^^^^^^
+IndexError: list index out of range 이런 오류가 나
+이 오류는 리스트 인덱스가 범위를 벗어난 경우 발생하는 오류입니다. 
+코드를 보면 prev_x, prev_y = self.coords[i - 1]와 같은 코드가 있는데, 
+이 부분에서 리스트 self.coords의 인덱스가 범위를 벗어난 것 같습니다.
+
+해당 코드 부분에서는 self.coords 리스트를 초기화하는 부분이나, 
+self.coords 리스트의 인덱스를 참조하는 부분에서 오류가 발생할 가능성이 있습니다. 
+이 부분을 확인해보시면 됩니다.
+
+import math
+
+        self.coords = [(100, 100)]
+        self.colors = [(189, 189, 189)]
+
+# 30도를 라디안으로 변환
+        angle = math.radians(30)
+
+# x 좌표 증가량
+        delta_x = 20
+
+# y 좌표 증가량 (tan(30) = 1/√3)
+        delta_y = delta_x / math.sqrt(3)
+
+        for i in range(1, 20):
+    # 이전 점의 x, y 좌표
+            prev_x, prev_y = self.coords[i - 1]
+    
+    # 현재 점의 x, y 좌표 계산
+            curr_x = prev_x + delta_x
+            curr_y = prev_y + delta_y
+    
+    # 현재 점의 좌표를 리스트에 추가
+        self.coords.append((curr_x, curr_y))
+    
+    # 현재 점의 색상을 리스트에 추가
+        self.colors.append((189, 189, 189))
+
+        for i in range(11):
+            coord = (100, 100 + i*10)
+        self.coords.append(coord)
+        self.colors.append((189, 189, 189))
+
+        for i in range(8):
+            coord = (100, 200 + i*10)
+        self.coords.append(coord)
+        self.colors.append((189, 189, 189))
+
+        self.pos = 0  # 배열 시작 위치
+
+        
+        self.coords = []
+        for i in range(11):
+            coord = (100, 100 + i*10)
+            self.coords.append(coord)
+        for i in range(8):
+            coord = (100, 200 + i*10)
+            self.coords.append(coord)                           # 점 배열
+        
+        self.colors = []
+        for i in range(19):
+            color = (189, 189, 189)
+            self.colors.append(color)                              # 색상 배열
+        self.pos = 0                                            # 배열 시작 위치
+
+        
+
+        
+        # Timer 설정
+        self.timer = QTimer(self)
+        self.timer.start(300)                                   # 0.3sec
+        self.timer.timeout.connect(self.draw_point)
+
+    def paintEvent(self, event):
+        painter = QPainter()
+        painter.begin(self)
+
