@@ -1,3 +1,4 @@
+
 import cv2 # opencv-python 라이브러리를 호출
 import numpy as np # numpy 라이브러리 호출 -> numpy 라이브러리를 뒤에 코드에서는 np라고 쓰겠다.
 import matplotlib.pyplot as plt # matplotlib 시각화 라이브러리
